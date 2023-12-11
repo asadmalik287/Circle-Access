@@ -1,21 +1,21 @@
 @font-face {
     font-family: Open-sans-bold;
-    src: url('./fonts/OpenSans-Bold.ttf');
+    src: url('../fonts/OpenSans-Bold.ttf');
 }
 
 @font-face {
     font-family: Open-sans-semiBold;
-    src: url('./fonts/OpenSans-SemiBold.ttf');
+    src: url('../fonts/OpenSans-SemiBold.ttf');
 }
 
 @font-face {
     font-family: Open-sans-medium;
-    src: url('./fonts/OpenSans-Medium.ttf');
+    src: url('../fonts/OpenSans-Medium.ttf');
 }
 
 @font-face {
     font-family: Open-sans-regular;
-    src: url('./fonts/OpenSans-Regular.ttf');
+    src: url('../fonts/OpenSans-Regular.ttf');
 }
 
 
@@ -46,7 +46,7 @@
 
 }
 
-.bg-img{
+.bg-img {
     background-image: url('./images/Background.png');
     height: 100vh;
 
@@ -101,6 +101,7 @@
     padding: 40px 60px;
     gap: 42px;
 }
+
 .sign-in-p {
     color: var(--gray-primary-text--color);
     /* letter-spacing: 0.014px; */
@@ -109,10 +110,11 @@
 
 .login_barcode {
     max-width: 942px;
-     margin: auto;
-     border-radius: 8px;
-     padding: 40px 60px;
- }
+    margin: auto;
+    border-radius: 8px;
+    padding: 40px 60px;
+}
+
 .login-buton-bg {
     background-color: var(--gray-bg-input--color);
     padding: 14px 24px;
@@ -126,22 +128,31 @@
 .subscribe-span {
     color: var(--primary-text--color);
 }
-.subscribe-btn{
+
+.subscribe-btn {
     padding: 14px 32px;
-}.copyright-p{
+}
+
+.copyright-p {
     color: var(--white-headi--color);
 }
 
 @media screen and (max-width:480px) {
     .admin-box-main {
         width: 318px;
-    }.login-buton-bg {
+    }
+
+    .login-buton-bg {
         width: auto;
-    }.admin-box-padding {
+    }
+
+    .admin-box-padding {
         padding: 30px 30px;
         gap: 30px;
-    }.subscribe-btn{
+    }
+
+    .subscribe-btn {
         padding: 14px 14px;
     }
-    
+
 }
