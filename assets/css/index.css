@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Open-sans-bold;
+    src: url('/assets/fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: Open-sans-semiBold;
+    src: url('/assets/fonts/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Open-sans-medium;
+    src: url('/assets/fonts/OpenSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: Open-sans-regular;
+    src: url('/assets/fonts/OpenSans-Regular.ttf');
+}
+
+
+
+.bold {
+    font-family: Open-sans-bold;
+}
+
+.semiBold {
+    font-family: Open-sans-semiBold;
+}
+
+.medium {
+    font-family: Open-sans-medium;
+}
+
+.regular {
+    font-family: Open-sans-regular;
+}
+
+:root {
+    --primary-bg--color: #37CBC6;
+    --primary-text--color: #41B8B6;
+    --gray-primary-text--color: #5F5F5F;
+    --white-headi--color: #fff;
+    --gray-bg-input--color: #E3E8E8;
+    --neutral-black--headi: #000;
+
+}
+
+.banner-bg {
+    background-image: url(/assets/images/Background.png);
+    height: 100vh;
+
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-11 {
+    font-size: 11px;
+}
+
+.admin-box-main {
+    width: 463px;
+    background-color: var(--white-headi--color);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 1.5px 3px 0px rgba(0, 0, 0, 0.14);
+}
+
+.admin-box-main-margin {
+    margin: 32px 0px 40px;
+}
+
+.banner-height {
+    height: 100vh;
+}
+
+.admin-headi {
+    color: var(--white-headi--color);
+}
+
+.admin-box-padding {
+    padding: 40px 60px;
+    gap: 42px;
+}
+
+.sign-in-h {
+    color: var(--neutral-black--headi);
+}
+
+.sign-in-p {
+    color: var(--gray-primary-text--color);
+    /* letter-spacing: 0.014px; */
+
+}
+
+.login-buton-bg {
+    background-color: var(--gray-bg-input--color);
+    color: var(--neutral-black--headi);
+    padding: 14px 24px;
+    width: 343px;
+}
+
+.subscribe-p {
+    color: var(--gray-primary-text--color);
+}
+
+.subscribe-span {
+    color: var(--primary-text--color);
+}
+.subscribe-btn{
+    padding: 14px 32px;
+}
+
+@media screen and (max-width:480px) {
+    .admin-box-main {
+        width: 318px;
+    }.login-buton-bg {
+        width: auto;
+    }.admin-box-padding {
+        padding: 30px 30px;
+        gap: 30px;
+    }.subscribe-btn{
+        padding: 14px 14px;
+    }
+    
+}
