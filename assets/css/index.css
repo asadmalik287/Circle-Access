@@ -40,14 +40,12 @@
     --primary-bg--color: #37CBC6;
     --primary-text--color: #41B8B6;
     --gray-primary-text--color: #5F5F5F;
-    --white-headi--color: #fff;
     --gray-bg-input--color: #E3E8E8;
-    --neutral-black--headi: #000;
 
 }
 
-.bg-img {
-    background-image: url('./images/Background.png');
+.login-bg{
+    background-image: url('../images/Background.png');
     height: 100vh;
 
 }
@@ -99,13 +97,13 @@
 
 .admin-box-padding {
     padding: 40px 60px;
-    gap: 42px;
 }
 
 .sign-in-p {
     color: var(--gray-primary-text--color);
-    /* letter-spacing: 0.014px; */
 
+}.admin-space{
+    padding-top: 42px;
 }
 
 .login_barcode {
@@ -133,10 +131,6 @@
     padding: 14px 32px;
 }
 
-.copyright-p {
-    color: var(--white-headi--color);
-}
-
 @media screen and (max-width:480px) {
     .admin-box-main {
         width: 318px;
@@ -148,11 +142,10 @@
 
     .admin-box-padding {
         padding: 30px 30px;
-        gap: 30px;
-    }
-
-    .subscribe-btn {
+    }.subscribe-btn{
         padding: 14px 14px;
+    }.admin-space{
+        padding-top: 30px;
     }
 
 }
