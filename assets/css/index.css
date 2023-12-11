@@ -95,7 +95,7 @@
 }
 
 .banner-height {
-    /* height: 100vh; */
+    height: 95vh;
 }
 
 .admin-headi {
@@ -133,6 +133,8 @@
 }
 .subscribe-btn{
     padding: 14px 32px;
+}.copyright-p{
+    color: var(--white-headi--color);
 }
 
 @media screen and (max-width:480px) {
