@@ -273,7 +273,9 @@ input:focus {
 /* -------------Dashboard------------- */
 .tt-configuration {
     background-color: #F6F8FB;
+    height: 100vh;
 }
+
 
 .tt-config-setting {
     border-radius: 4px;
