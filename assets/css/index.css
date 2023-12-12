@@ -21,23 +21,26 @@
 
 
 .bold {
-    font-family: Open-sans-bold;
+    font-family: Open-sans-bold !important;
 }
 
 .semiBold {
-    font-family: Open-sans-semiBold;
+    font-family: Open-sans-semiBold !important;
 }
 
 .medium {
-    font-family: Open-sans-medium;
+    font-family: Open-sans-medium !important;
 }
 
 .regular {
+    font-family: Open-sans-regular !important;
+}
+
+#chart1 *,
+#chart2 * {
     font-family: Open-sans-regular;
 }
-#chart1 * , #chart2 *{
-    font-family: Open-sans-regular;
-}
+
 :root {
     --primary-bg--color: #37CBC6;
     --primary-text--color: #41B8B6;
@@ -45,7 +48,9 @@
     --gray-bg-input--color: #E3E8E8;
 
 }
-
+.textLight{
+    color: #5F5F5F;
+}
 .fs-32 {
     font-size: 32px;
 }
@@ -140,61 +145,84 @@ input:focus {
     padding: 14px 24px;
     border-bottom: 1px solid #D9D9D9;
 }
-.tt-left-chart{
+
+.tt-left-chart {
     border-radius: 4.889px;
     box-shadow: 0px 0px 3.667px 0px rgba(0, 0, 0, 0.12), 0px 1.833px 3.667px 0px rgba(0, 0, 0, 0.14);
     padding: 24px;
 }
-@media screen and (min-width:1400px) and (max-width: 1550px){
+
+@media screen and (min-width:1400px) and (max-width: 1550px) {
     .tt-dev-resources h2 {
         font-size: 42px;
     }
 }
-@media screen and (min-width:1025px) and (max-width: 1400px){
+
+@media screen and (min-width:1025px) and (max-width: 1400px) {
     .tt-cta-box {
         padding: 40px 10px;
+    }
+
+    .mainContainer {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+
+    .tt-cta-box p {
+        font-size: 12px;
+    }
+
+    .tt-dev-resources h2 {
+        font-size: 36px;
+    }
+
+    .tt-dev-resources {
+        padding: 20px;
+    }
+
+    .tt-resources-inner {
+        padding: 14px 10px;
+    }
 }
-.mainContainer {
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-}
-.tt-cta-box p{
-    font-size: 12px;
-}
-.tt-dev-resources h2 {
-    font-size: 36px;
-}
-.tt-dev-resources {
-    padding: 20px;
-}
-.tt-resources-inner {
-    padding: 14px 10px;
-}
-}
+
 @media screen and (min-width:768px) and (max-width: 1025px) {
     .mainContainer {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
+
     .tt-resources-inner {
         padding: 14px 10px;
     }
+
     .tt-cta-box {
         width: 50%;
         gap: 10px;
     }
+
     .tt-dev-resources {
         padding: 20px;
     }
+
     .tt-dev-resources h2 {
         font-size: 38px;
     }
-    .tt-cta-box p{
+
+    .tt-cta-box p {
         font-size: 12px;
     }
+
     .tt-cta-box {
         padding: 20px 10px;
-}
+    }
+    .tt-footer-config{
+        justify-content: center;
+        align-items: center;
+    }
+    .tt-config-footer {
+        justify-content: center !important;
+        align-items: center;
+    }
 }
 @media screen and (max-width:768px) {
     .tt-cta-box {
@@ -202,9 +230,11 @@ input:focus {
         padding: 20px 20px;
         justify-content: center;
     }
-    .tt-cta-box p{
+
+    .tt-cta-box p {
         text-align: center;
     }
+
     .mainContainer {
         padding-left: 20px !important;
         padding-right: 20px !important;
@@ -213,22 +243,69 @@ input:focus {
     .tt-dev-resources h2 {
         font-size: 32px;
     }
-    .tt-main-resource{
+
+    .tt-main-resource {
         flex-direction: column;
     }
-    .tt-left-chart{
+
+    .tt-left-chart {
         padding: 12px;
     }
-    .logo-content{
+
+    .logo-content {
         font-size: 20px !important;
     }
-    #apexcharts09022qao{
-       height: 300px !important;
+
+    #apexcharts09022qao {
+        height: 300px !important;
     }
-    #chart2{
+
+    #chart2 {
         min-height: 300px !important;
     }
 }
 
 /* -------------Dashboard------------- */
 /* -------------Dashboard------------- */
+.tt-configuration {
+    background-color: #F6F8FB;
+}
+
+.tt-config-setting {
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 1.5px 3px 0px rgba(0, 0, 0, 0.14);
+}
+.bg-input{
+    background-color: #F3F3F3 !important;
+}
+.tt-config-btn{
+    background-color: #A1DEDC !important;
+}
+input::placeholder{
+    font-size: 12px;
+}
+.form-check-input:checked {
+    background-color: #37CBC6 !important;
+    border-color:  #37CBC6 !important;
+}
+.tt-config-switcher{
+    width: 40px !important;
+    height: 20px !important;
+}
+.tt-config-footer{
+    justify-content: end;
+}
+@media screen and (max-width:1200px){
+.tt-config-setting .form-check{
+    margin-left: 12px !important;
+}
+.tt-config-setting .form-check .form-check-label {
+    font-size: 13px !important;
+}
+
+}
+@media screen and (max-width:768px){
+    .tt-config-footer{
+        justify-content: center;
+    }
+}
