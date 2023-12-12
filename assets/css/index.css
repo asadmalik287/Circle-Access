@@ -341,4 +341,7 @@ input::placeholder{
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
+    .mobpadding {
+        padding:15px 0px;
+    }
 }
