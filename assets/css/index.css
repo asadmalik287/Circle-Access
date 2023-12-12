@@ -86,7 +86,6 @@
 
 .admin-box-main {
     width: 463px;
-    background-color: var(--white-headi--color);
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 1.5px 3px 0px rgba(0, 0, 0, 0.14);
 }
 
@@ -98,19 +97,10 @@
     height: 95vh;
 }
 
-.admin-headi {
-    color: var(--white-headi--color);
-}
-
 .admin-box-padding {
     padding: 40px 60px;
     gap: 42px;
 }
-
-.sign-in-h {
-    color: var(--neutral-black--headi);
-}
-
 .sign-in-p {
     color: var(--gray-primary-text--color);
     /* letter-spacing: 0.014px; */
@@ -119,7 +109,6 @@
 
 .login-buton-bg {
     background-color: var(--gray-bg-input--color);
-    color: var(--neutral-black--headi);
     padding: 14px 24px;
     width: 343px;
 }
