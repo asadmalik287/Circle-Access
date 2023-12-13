@@ -269,10 +269,13 @@ input:focus {
 
 /* -------------Dashboard------------- */
 /* -------------Dashboard------------- */
-.banner_light{
+.wrapper{
     background-color: #F6F8FB;
+    min-height: 100%;
 }
-
+html,body {
+    height: 100%;
+}
 
 .tt-config-setting {
     border-radius: 4px;
