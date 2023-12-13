@@ -48,9 +48,11 @@
     --gray-bg-input--color: #E3E8E8;
 
 }
-.textLight{
+
+.textLight {
     color: #5F5F5F;
 }
+
 .fs-32 {
     font-size: 32px;
 }
@@ -217,15 +219,18 @@ input:focus {
     .tt-cta-box {
         padding: 20px 10px;
     }
-    .tt-footer-config{
+
+    .tt-footer-config {
         justify-content: center;
         align-items: center;
     }
+
     .tt-config-footer {
         justify-content: center !important;
         align-items: center;
     }
 }
+
 @media screen and (max-width:768px) {
     .tt-cta-box {
         width: 100%;
@@ -269,11 +274,13 @@ input:focus {
 
 /* -------------Dashboard------------- */
 /* -------------Dashboard------------- */
-.wrapper{
+.wrapper {
     background-color: #F6F8FB;
     min-height: 100%;
 }
-html,body {
+
+html,
+body {
     height: 100%;
 }
 
@@ -281,139 +288,182 @@ html,body {
     border-radius: 4px;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 1.5px 3px 0px rgba(0, 0, 0, 0.14);
 }
+
 .tt-config-setting1 {
     border-radius: 4px;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 1.5px 3px 0px rgba(0, 0, 0, 0.14);
 }
-.bg-input{
+
+.bg-input {
     background-color: #F3F3F3 !important;
 }
-.tt-config-btn{
+
+.tt-config-btn {
     font-size: 14px !important;
     background-color: #A1DEDC !important;
 }
-input::placeholder{
+
+input::placeholder {
     font-size: 12px;
 }
+
 .form-check-input:checked {
     background-color: #37CBC6 !important;
-    border-color:  #37CBC6 !important;
+    border-color: #37CBC6 !important;
 }
-.tt-config-switcher{
+
+.tt-config-switcher {
     width: 40px !important;
     height: 20px !important;
 }
-.tt-config-footer{
+
+.tt-config-footer {
     justify-content: end;
 }
-.tt-config-danger{
+
+.tt-config-danger {
     background-color: #F7D4D4 !important;
     font-size: 14px !important;
 }
-.tt-admin-table{
-    border-radius:  4px !important;
-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 1.5px 3px 0px rgba(0, 0, 0, 0.14) !important;
+
+.tt-admin-table {
+    border-radius: 4px !important;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 1.5px 3px 0px rgba(0, 0, 0, 0.14) !important;
 }
 
-.bg-lightGreen{
+.bg-lightGreen {
     background-color: #C6EBEA !important;
     border-radius: 0 !important;
     border-top-right-radius: 4px !important;
     border-bottom-right-radius: 4px !important;
 }
-.bg-lightInput{
+
+.bg-lightInput {
     border-radius: 0 !important;
     border-top-right-radius: 4px !important;
     border-bottom-right-radius: 4px !important;
 }
-th, td{
+
+th,
+td {
     vertical-align: middle;
 }
-.tt-manag-table{
+
+.tt-manag-table {
     white-space: nowrap;
 }
+
 .tt-admin-tableInner input {
     width: 164px !important;
 }
 
-.tt-config-switcher:focus{
+.tt-config-switcher:focus {
     box-shadow: none;
     border-color: rgba(0, 0, 0, 0.25) !important;
 }
+
 .form-switch .form-check-input:checked {
-    border-color:transparent!important;
+    border-color: transparent !important;
 
 }
+
 .form-switch .form-check-input:focus {
-background-image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e";
+    background-image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e";
 }
+
 .form-switch .form-check-input {
     cursor: pointer;
-background-image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e";
+    background-image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e";
 }
-.tt-config-btn{
+
+.tt-config-btn {
     padding: 14px 42px !important;
 }
-button:disabled{
+
+button:disabled {
     background-color: #F6F8FB !important;
-    color:#666262 !important;
+    color: #666262 !important;
     border-radius: 8px;
-border: 0 !important;
+    border: 0 !important;
 }
-.tt-config-btn-disabled:disabled{
+
+.tt-config-btn-disabled:disabled {
     background-color: #fff !important;
 }
-.cursor-pointer{
+
+.cursor-pointer {
     cursor: pointer;
 }
-.tt-admin-canvas{
+
+.tt-admin-canvas {
     background-color: #F6F8FB !important;
     width: 520px !important;
 }
 
-.tt-admin-canvasInner{
+.tt-admin-canvasInner {
     padding: 32px;
-    height: 80%;
+    height: 95%;
 
 }
-@media screen and (min-width:992px){
+
+.tt-canvas-top {
+    height: 88%;
+}
+
+.tt-canvas-main {
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 1.5px 3px 0px rgba(0, 0, 0, 0.14);
+}
+
+@media screen and (min-width:992px) {
     .tt-admin-table th {
-     width: 25%;
+        width: 25%;
     }
-    .tt-table-responsive{
+
+    .tt-table-responsive {
         overflow-x: visible !important;
     }
 }
-@media screen and (max-width:1200px){
-.tt-config-setting .form-check{
-    margin-left: 12px !important;
-}
-.tt-config-setting1 .form-check{
-    margin-left: 12px !important;
-}
-.tt-config-setting .form-check .form-check-label {
-    font-size: 13px !important;
-}
-.tt-config-setting1 .form-check .form-check-label {
-    font-size: 13px !important;
-}
-.mainContainer1 {
-    padding-left: 50px !important;
-    padding-right: 50px !important;
-}
+
+@media screen and (max-width:1200px) {
+    .tt-config-setting .form-check {
+        margin-left: 12px !important;
+    }
+
+    .tt-config-setting1 .form-check {
+        margin-left: 12px !important;
+    }
+
+    .tt-config-setting .form-check .form-check-label {
+        font-size: 13px !important;
+    }
+
+    .tt-config-setting1 .form-check .form-check-label {
+        font-size: 13px !important;
+    }
+
+    .mainContainer1 {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
 
 }
-@media screen and (max-width:768px){
-    .tt-config-footer1{
+
+@media screen and (max-width:768px) {
+    .tt-config-footer1 {
         justify-content: center;
     }
-    .tt-config-foote1r{
+
+    .tt-config-foote1r {
         justify-content: center;
     }
-    .tt-admin-tableInner{
+
+    .tt-admin-tableInner {
         width: 100% !important;
     }
-    .tt-admin-table th,.tt-admin-table td {
+
+    .tt-admin-table th,
+    .tt-admin-table td {
         white-space: nowrap;
     }
 }
