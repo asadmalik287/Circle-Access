@@ -11,52 +11,33 @@
     <link rel="shortcut icon" href="./assets/images/navLogo.png" type="image/x-icon">
     <title>Circle Access</title>
     <style>
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #ffffff;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 20px;
-          }
-          
-          .sidenav a {
-            padding: 14px 52px;
-            text-decoration: none;
-            font-size: 25px;
-          
-            display: block;
-            transition: 0.3s;
-          }
-          
-        .p32{
-            padding: 32px 0px;
+        .side-bar-header{
+            padding: 14px 30px;
+           
         }
-        .p24{
+        .closebtn{
+            padding: 24px !important;
+        }
+        .sideBarLogo{
+            padding: 8px 14px;
+        }
+        .togglerMenu{
             padding: 24px;
         }
-        .p52{
-            padding: 52px 32px;
+        .search-div-sidbar{
+            padding: 32px;
         }
-        .sidenav ul li {
-            list-style-type: none;
+        .sidebarList li{
+            list-style: none;
+            padding: 14px 52px;
         }
-        .bordrRadius{
-            border-radius: 99px !important;
+        .sidebarList li a{
+           text-decoration: none;
         }
-          #main {
-            transition: margin-left .5s;
-            padding: 16px;
-          }
-          
-          @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-          }
+        .sideBarLogout{
+            padding: 14px 52px;
+
+        }
     </style>
 </head>
 
@@ -67,7 +48,9 @@
                 
                 <div class="d-flex align-items-center">
                     <div id="main">
-                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                        <span style="font-size:30px;cursor:pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <img class="togglerMenu" src="./assets/images/humburger-icon.png" alt="">
+                        </span>
                       </div>
                     <a href="./dashboard.html"> <img src="./assets/images/navLogo.png" alt="..."></a>
                     <a href="./dashboard.html" class="navbar-brand ps-2 logo-content semiBold">Circle Access</a>
@@ -95,19 +78,23 @@
     <!----------- Side bar start  ------------>
     <!----------- Side bar End  ------------>
 
-
-       
-        <div id="mySidenav" class="sidenav">
-            <div class="d-flex justify-content-between align-items-center ">
-                <div href="javascript:void(0)" class="closebtn " onclick="closeNav()">
-                    <img class="p24 cursor-pointer" src="./assets/images/cross.png" alt="">
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                    <img src="./assets/images/navLogo.png" alt="...">
-                    <a href="./dashboard.html" class="navbar-brand ps-2 logo-content semiBold">Circle Access</a>
-                </div>
-            </div>
-            <div class="search-div  p52">
+    <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        
+      </a>
+      
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header side-bar-header">
+          
+          <button type="button" class="btn-close text-reset closebtn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="d-flex justify-content-center align-items-center sideBarLogo">
+            <img src="./assets/images/navLogo.png" alt="...">
+            <a href="./dashboard.html" class="navbar-brand ps-2 logo-content semiBold">Circle Access</a>
+        </div>
+        </div>
+        <div class="offcanvas-body">
+          
+            <div class="search-div-sidbar">
                 <div class="input-group  border rounded-3 d-lg-flex d-sm-none d-none ">
                     <span class="input-group-text bg-white border-0" id="basic-addon1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -117,7 +104,8 @@
                     <input type="text" class="form-control border-0" placeholder="Search circle services" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
             </div>
-            <ul class="ps-0">
+
+            <ul class="sidebarList ps-0">
                 <li>
                     <a href="#">
                         <div class="d-flex  align-items-center ">
@@ -168,21 +156,18 @@
                     </a>
                 </li>
             </ul>
-           
-           
-          <div class="sideBarLogout">
-            <a href="#">
-                <div class="d-flex  align-items-center position-absolute bottom-0 p-4">
-                    <img class="pb-lg-0 pb-sm-2 pb-2" src="./assets/images/logout.svg" alt="...">
-                    <p class="text-black fs-14 mb-0 ps-lg-3 ps-md-2 ps-sm-0 ps-0 medium">Logout</p>
-                </div>
-            </a>
-          </div>
-            
-          
-            
+            <div class="sideBarLogout">
+                <a href="#">
+                    <div class="d-flex  align-items-center position-absolute bottom-0 p-4">
+                        <img class="pb-lg-0 pb-sm-2 pb-2" src="./assets/images/logout.svg" alt="...">
+                        <p class="text-black fs-14 mb-0 ps-lg-3 ps-md-2 ps-sm-0 ps-0 medium">Logout</p>
+                    </div>
+                </a>
+              </div>
+        </div>
+      </div>
        
-          </div>
+      
           
          
         
