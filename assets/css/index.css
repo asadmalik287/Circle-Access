@@ -271,7 +271,6 @@ input:focus {
 /* -------------Dashboard------------- */
 .tt-configuration {
     background-color: #F6F8FB;
-    height: 100vh;
 }
 
 
@@ -354,6 +353,9 @@ button:disabled{
     color:#666262 !important;
     border-radius: 8px;
 border: 0 !important;
+}
+.tt-config-btn-disabled:disabled{
+    background-color: #fff !important;
 }
 .cursor-pointer{
     cursor: pointer;
