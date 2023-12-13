@@ -402,12 +402,12 @@ button:disabled {
 
 .tt-admin-canvasInner {
     padding: 32px;
-    height: 95%;
+    height: 100%;
 
 }
 
 .tt-canvas-top {
-    height: 88%;
+    height: 85%;
 }
 
 .tt-canvas-main {
