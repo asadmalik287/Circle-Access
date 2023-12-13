@@ -332,6 +332,14 @@ th, td{
 .tt-manag-table{
     white-space: nowrap;
 }
+.tt-admin-tableInner input {
+    width: 164px !important;
+}
+@media screen and (min-width:992px){
+    .tt-admin-table th {
+     width: 25%;
+    }
+}
 @media screen and (max-width:1200px){
 .tt-config-setting .form-check{
     margin-left: 12px !important;
@@ -360,5 +368,8 @@ th, td{
     }
     .tt-admin-tableInner{
         width: 100% !important;
+    }
+    .tt-admin-table th,.tt-admin-table td {
+        white-space: nowrap;
     }
 }
