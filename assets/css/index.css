@@ -365,6 +365,13 @@ border: 0 !important;
 }
 .tt-admin-canvas{
     background-color: #F6F8FB !important;
+    width: 520px !important;
+}
+
+.tt-admin-canvasInner{
+    padding: 32px;
+    height: 80%;
+
 }
 @media screen and (min-width:992px){
     .tt-admin-table th {
