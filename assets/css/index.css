@@ -407,6 +407,9 @@ button:disabled {
 .tt-admin-canvas {
     background-color: #F6F8FB !important;
     width: 520px !important;
+    border-radius:  14px 0 0 14px;
+    /* border-top-left-radius: 14px; */
+    /* border-bottom-left-radius: 14px; */
 }
 
 .tt-admin-canvasInner {
