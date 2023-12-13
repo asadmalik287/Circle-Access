@@ -576,13 +576,18 @@ button:disabled {
 .closebtn {
     padding: 24px !important;
 }
+.span-close-nav{
+    font-size:30px;
+    cursor:pointer;
+    line-height: 0;
 
+}
 .sideBarLogo {
     padding: 8px 14px;
 }
 
 .togglerMenu {
-    padding: 24px;
+    padding-right: 15px;
 }
 
 .search-div-sidbar {
