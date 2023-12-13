@@ -173,15 +173,23 @@
         </div>
     </section>
      
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end tt-admin-canvas p-3" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
-         <div class="d-flex">
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            <h5 class="fs-32" id="offcanvasRightLabel">Admin Management</h5>
+         <div class="d-flex align-items-center">
+            <button type="button fs-16" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="fs-22 semiBold ps-3" id="offcanvasRightLabel">Admin Management</h5>
          </div>
       </div>
-      <div class="offcanvas-body">
-        ...
+      <div class="offcanvas-body py-3">
+       <div class="p-3 bg-white">
+        <p class="fs-16 regular textLight ">Rename your tenant name</p>
+        <div class="input-group flex-nowrap w-100">
+            <input type="text" class="form-control" placeholder="Tenant admin 001" aria-label="Tenant admin 001" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text bg-lightInput cursor-pointer" id="basic-addon2"><img src="./assets/images/arrow_circle_right.png" alt=""></span>
+            </div>
+          </div>
+       </div>
       </div>
     </div>
     <footer>

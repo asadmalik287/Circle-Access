@@ -318,6 +318,11 @@ box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 1.5px 3px 0px rgba(0, 0, 0,
     border-top-right-radius: 4px !important;
     border-bottom-right-radius: 4px !important;
 }
+.bg-lightInput{
+    border-radius: 0 !important;
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
 th, td{
     vertical-align: middle;
 }
@@ -359,6 +364,9 @@ border: 0 !important;
 }
 .cursor-pointer{
     cursor: pointer;
+}
+.tt-admin-canvas{
+    background-color: #F6F8FB !important;
 }
 @media screen and (min-width:992px){
     .tt-admin-table th {
