@@ -557,7 +557,7 @@ button:disabled {
   /* ---------------User Statistics--------------- */
   /* ---------------User Statistics--------------- */
   .tt-config-button{
-    padding: 14px 42px !important;
+    width: 258px !important;
   }
   .btn-close:focus{
     box-shadow: none !important;
