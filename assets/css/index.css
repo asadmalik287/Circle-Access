@@ -556,3 +556,89 @@ button:disabled {
   }
   /* ---------------User Statistics--------------- */
   /* ---------------User Statistics--------------- */
+  .tt-config-button{
+    width: 258px !important;
+  }
+  .btn-close:focus{
+    box-shadow: none !important;
+    outline: 0;
+  }
+
+
+  /* Side bar css */
+
+
+  .side-bar-header {
+    padding: 14px 30px;
+
+}
+
+.closebtn {
+    padding: 24px !important;
+}
+
+.sideBarLogo {
+    padding: 8px 14px;
+}
+
+.togglerMenu {
+    padding: 24px;
+}
+
+.search-div-sidbar {
+    padding: 32px;
+}
+
+.Pf-search-div-sidbar {
+    padding: 14px 0px;
+}
+
+.sidebarList li {
+    list-style: none;
+    padding: 14px 52px;
+}
+
+.sidebarList li:hover {
+    background-color: #f4f4f4;
+}
+
+.sidebarList li a {
+    text-decoration: none;
+}
+
+.sideBarLogout {
+    padding: 18px 52px;
+
+}
+
+.sideBar {
+    width: 327px !important;
+}
+
+.sideBarSerach {
+    border-radius: 99px !important;
+    border: 1px solid #D9D9D9 !important;
+}
+
+.sideBarSerachIcon {
+    border-radius: 99px !important;
+    border: 1px solid #D9D9D9 !important;
+    border-right: none;
+}
+
+.sideBarSerachInput {
+    border-radius: 99px !important;
+    border: 1px solid #D9D9D9 !important;
+    border-left: none;
+}
+
+
+@media (max-width:767px) {
+    .search-div-sidbar {
+        padding: 0;
+    }
+
+    .togglerMenu {
+        padding: 10px;
+    }
+}
