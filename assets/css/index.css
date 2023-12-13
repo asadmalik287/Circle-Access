@@ -482,3 +482,15 @@ button:disabled {
         width: 100% !important;
     }
 }
+@media screen and (max-width:395px){
+.tt-canvas-inner{
+    flex-wrap: wrap;
+}
+.tt-canvas-inner button{
+    width: 100% !important;
+    margin-top: 10px;
+}
+.tt-canvas-top {
+    height: 75%;
+}
+}
