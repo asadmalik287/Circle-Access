@@ -42,6 +42,7 @@
 }
 
 :root {
+    
     --primary-bg--color: #37CBC6;
     --primary-text--color: #41B8B6;
     --gray-primary-text--color: #5F5F5F;
@@ -407,6 +408,9 @@ button:disabled {
 .tt-admin-canvas {
     background-color: #F6F8FB !important;
     width: 520px !important;
+    border-radius:  14px 0 0 14px;
+    /* border-top-left-radius: 14px; */
+    /* border-bottom-left-radius: 14px; */
 }
 
 .tt-admin-canvasInner {
@@ -534,14 +538,17 @@ button:disabled {
     height: 128px;
   }
   .tt-user-minus{
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
     background-color: #e5e3e3;
+    border-radius: 4px;
   }
   .tt-user-plus{
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
     background-color: #C6EBEA;
+    border-radius: 4px;
+
   }
   .tt-statis-table{
     border-radius: 4px;
@@ -549,3 +556,10 @@ button:disabled {
   }
   /* ---------------User Statistics--------------- */
   /* ---------------User Statistics--------------- */
+  .tt-config-button{
+    padding: 14px 42px !important;
+  }
+  .btn-close:focus{
+    box-shadow: none !important;
+    outline: 0;
+  }
