@@ -40,8 +40,7 @@
             </div>
         </nav>
     </header>
-
-    <section>
+    <section class="wrapper">
         <div class="mainContainer py-3">
             <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
                 <ol class="breadcrumb d-flex align-items-center">
@@ -52,14 +51,10 @@
                 </ol>
             </nav>
         </div>
-    </section>
-    <section>
         <div class="mainContainer d-flex align-items-center pb-3">
             <img src="./assets/images/plus.png" />
             <p class="text-black fs-22 semiBold ps-lg-3 ps-md-2 ps-sm-2 ps-2 mb-0">New Administrator</p>
         </div>
-    </section>
-    <section>
         <div class="mainContainer py-3">
             <div class="bg-white admini-main">
                 <div class="row flex-lg-row flex-sm-column-reverse flex-column-reverse">
@@ -101,9 +96,9 @@
 
                     </div>
                     <div class="col-lg-3 col-md-5">
-                            <div class="scan-main pl-2">
-                                <img src="./assets/images/scan.png" alt="Scan-report" class="scan-bg-img w-100">
-                                <div class="scan-text">
+                            <div class="position-relative cursor-pointer pl-2">
+                                <img src="./assets/images/scan.png" alt="Scan-report" class="w-100">
+                                <div class="scan-text position-absolute top-0 left-0 w-100 h-100 d-flex justify-content-center align-items-center text-center ">
                                   <div class="text">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                     fill="none">
@@ -116,7 +111,6 @@
                                   </div>
                                 </div>
                               </div>
-                     
                     </div>
                 </div>
             </div>
