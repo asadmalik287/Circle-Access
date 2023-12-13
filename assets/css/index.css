@@ -187,8 +187,13 @@ input:focus {
     .tt-resources-inner {
         padding: 14px 10px;
     }
+  
 }
-
+@media screen and (min-width:480px) and (max-width: 768px){
+    #offcanvasRight {
+        width: 400px !important;
+    }
+}
 @media screen and (min-width:768px) and (max-width: 1025px) {
     .mainContainer {
         padding-left: 20px !important;
@@ -228,6 +233,9 @@ input:focus {
     .tt-config-footer {
         justify-content: center !important;
         align-items: center;
+    }
+    #offcanvasRight {
+        width: 400px !important;
     }
 }
 
@@ -270,6 +278,7 @@ input:focus {
     #chart2 {
         min-height: 300px !important;
     }
+    
 }
 
 /* -------------Dashboard------------- */
@@ -446,9 +455,10 @@ button:disabled {
         padding-left: 50px !important;
         padding-right: 50px !important;
     }
-
+    .tt-admin-canvasInner {
+        padding: 22px;
 }
-
+}
 @media screen and (max-width:768px) {
     .tt-config-footer1 {
         justify-content: center;
@@ -465,5 +475,10 @@ button:disabled {
     .tt-admin-table th,
     .tt-admin-table td {
         white-space: nowrap;
+    }
+}
+@media screen and (max-width:480px) {
+    #offcanvasRight {
+        width: 100% !important;
     }
 }
