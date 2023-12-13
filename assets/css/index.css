@@ -316,8 +316,8 @@ input::placeholder{
     font-size: 14px !important;
 }
 .tt-admin-table{
-    border-radius: var(--Medium, 4px);
-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 1.5px 3px 0px rgba(0, 0, 0, 0.14);
+    border-radius:  4px !important;
+box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 1.5px 3px 0px rgba(0, 0, 0, 0.14) !important;
 }
 
 .bg-lightGreen{
@@ -334,6 +334,13 @@ th, td{
 }
 .tt-admin-tableInner input {
     width: 164px !important;
+}
+.tt-table-responsive{
+    overflow-x: visible !important;
+}
+.tt-config-switcher:focus{
+    box-shadow: none;
+    border-color: transparent !important;
 }
 @media screen and (min-width:992px){
     .tt-admin-table th {
