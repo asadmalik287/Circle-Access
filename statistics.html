@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap5.2.css">
+    <link rel="shortcut icon" href="./assets/images/navLogo.png" type="image/x-icon">
+    <title>Emails</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-main py-3">
+            <div class="container-fluid mainContainer bg-white">
+                <div class="d-flex align-items-center">
+                    <a href="./dashboard.html"> <img src="./assets/images/navLogo.png" alt="..."></a>
+                    <a href="./dashboard.html" class="navbar-brand ps-2 logo-content semiBold">Circle Access</a>
+                </div>
+                <div class="input-group nav-search border rounded-3 d-lg-flex d-sm-none d-none">
+                    <span class="input-group-text bg-white border-0" id="basic-addon1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path
+                                d="M11.8164 10.6914H11.2239L11.0139 10.4889C11.7489 9.63391 12.1914 8.52391 12.1914 7.31641C12.1914 4.62391 10.0089 2.44141 7.31641 2.44141C4.62391 2.44141 2.44141 4.62391 2.44141 7.31641C2.44141 10.0089 4.62391 12.1914 7.31641 12.1914C8.52391 12.1914 9.63391 11.7489 10.4889 11.0139L10.6914 11.2239V11.8164L14.4414 15.5589L15.5589 14.4414L11.8164 10.6914ZM7.31641 10.6914C5.44891 10.6914 3.94141 9.18391 3.94141 7.31641C3.94141 5.44891 5.44891 3.94141 7.31641 3.94141C9.18391 3.94141 10.6914 5.44891 10.6914 7.31641C10.6914 9.18391 9.18391 10.6914 7.31641 10.6914Z"
+                                fill="#8D8D8D" />
+                        </svg>
+                    </span>
+                    <input type="text" class="form-control border-0" placeholder="Search circle services"
+                        aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="d-flex align-items-center ">
+                    <img src="./assets/images/man.png" alt="...">
+                    <a class="navbar-brand nav-profile fs-14 ps-2">Profile</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="wrapper">
+        <div class="mainContainer py-3">
+            <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                <ol class="breadcrumb d-flex align-items-center">
+                    <li class="breadcrumb-item"><a class="text-decoration-none text-secondary fs-14 medium"
+                            href="./dashboard.html">Home</a></li>
+                    <li class="mx-2"><img src="./assets/images/forward.png" alt=""></li>
+                    <li class="breadcrumb-item active fs-14 medium" aria-current="page">User Statistics</li>
+                </ol>
+            </nav>
+            <div class="d-flex align-items-center py-2">
+                <p class="text-black fs-22 mb-0 semiBold">User Statistics</p>
+            </div>
+            <div class="row mt-4">
+               <div class="col-lg-3 col-md-6 mb-3">
+                <div class="bg-white tt-users p-4">
+                   <p class="mb-0 textLight fs-16 medium">
+                    Total users
+                   </p>
+                   <p class="mb-0 fs-24 semibold pt-3">24 users</p>
+                </div>
+               </div>
+               <div class="col-lg-3 col-md-6 mb-3">
+                <div class="bg-white tt-users p-4">
+                   <p class="mb-0 textLight fs-16 medium">
+                    Total active users
+                   </p>
+                   <p class="mb-0 fs-24 semibold pt-3">19 users</p>
+                </div>
+               </div>
+               <div class="col-lg-3 col-md-6 mb-3">
+                <div class="bg-white tt-users p-4">
+                    <p class="mb-0 textLight fs-16 medium">
+                        Active users  status
+                       </p>
+                  <div class="d-flex align-items-center justify-content-between pt-4">
+                    <div>
+                           <div class="d-flex align-items-center">
+                            <span class="tt-user-minus d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M2.25 9.75H15.75V8.25H2.25V9.75Z" fill="#D9D9D9"/>
+                              </svg></span>
+                              <p class="mb-0 fs-16 medium px-2">01 Months</p>
+                              <span class="tt-user-plus d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M2.25 9.75H15.75V8.25H2.25V9.75Z" fill="black"/>
+                                <path d="M9.75 15.75V2.25H8.25V15.75H9.75Z" fill="black"/>
+                              </svg></span>
+                           </div>
+                      </div>
+                      <div>
+                        <p class="mb-0 fs-16 medium">19 users </p>
+                      </div>
+                  </div>
+                </div>
+               </div>
+               <div class="col-lg-3 col-md-6 mb-3 d-flex justify-content-end align-items-end">
+                <div class="d-flex align-items-center">
+                    <p class="mb-0 textLight regular fs-14">Showing</p>
+                    <p class="mb-0 px-2 fs-14 semiBold">1-8 of 24</p>
+                    <div class="d-flex align-items-center">
+                        <button class="btn p-1"><img src="./assets/images/btnLeft.png" alt=""></button>
+                        <button class="btn p-1"><img src="./assets/images/btnRight.png" alt=""></button>
+                    </div>
+                </div>
+               </div>
+               
+                </div>
+                <div class="table-responsive tt-table-responsive mt-lg-4 mt-sm-2 mt-2">
+                    <table class="table bg-white tt-statis-table w-100 mt-3 text-center">
+                        <thead>
+                           <tr>
+                            <th class="py-3 px-3">
+                                <div class="d-flex align-items-center justify-content-center fs-16 semiBold">User ID
+                                    <div class="d-flex flex-column ps-2">
+                                        <img src="./assets/images/top.png" alt="">
+                                        <img src="./assets/images/botom.png" alt="">
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="py-3 px-3">
+                                <div class="d-flex align-items-center justify-content-center fs-16 semiBold">Last Login Date
+                                    <div class="d-flex flex-column ps-2">
+                                        <img src="./assets/images/top.png" alt="">
+                                        <img src="./assets/images/botom.png" alt="">
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="py-3 px-3">
+                                <div class="d-flex align-items-center justify-content-center fs-16 semiBold">Avg Login / day
+                                    <div class="d-flex flex-column ps-2">
+                                        <img src="./assets/images/top.png" alt="">
+                                        <img src="./assets/images/botom.png" alt="">
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="py-3 px-3">
+                                <div class="d-flex align-items-center justify-content-center fs-16 semiBold">Pin (%)
+                                    <div class="d-flex flex-column ps-2">
+                                        <img src="./assets/images/top.png" alt="">
+                                        <img src="./assets/images/botom.png" alt="">
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="py-3 px-3">
+                                <div class="d-flex align-items-center justify-content-center fs-16 semiBold">Scan (%)
+                                    <div class="d-flex flex-column ps-2">
+                                        <img src="./assets/images/top.png" alt="">
+                                        <img src="./assets/images/botom.png" alt="">
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="py-3 px-3">
+                                <div class="d-flex align-items-center justify-content-center fs-16 semiBold">User Onboarding Date
+                                    <div class="d-flex flex-column ps-2">
+                                        <img src="./assets/images/top.png" alt="">
+                                        <img src="./assets/images/botom.png" alt="">
+                                    </div>
+                                </div>
+                            </th>
+                            
+                                <th class="">
+                                <div class="d-flex align-items-center justify-content-center fs-16 semiBold">Machine Name
+                                    <div class="d-flex flex-column ps-2">
+                                        <img src="./assets/images/top.png" alt="">
+                                        <img src="./assets/images/botom.png" alt="">
+                                    </div>
+                                </div>
+                            </th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="fs-14 py-3 px-3 regular">asdkadasdq123ds2ca</td>
+                                <td class="fs-14 py-3 px-3 regular py-3">Thu, 30 Nov 2023 <br>
+                                    17:04:20 GMT</td>
+                                <td class="fs-14 py-3 px-3 regular">0.05</td>
+                                <td class="fs-14 py-3 px-3 regular">0</td>
+                                <td class="fs-14 py-3 px-3 regular">100</td>
+                                <td class="fs-14 py-3 px-3 regular">Mon, 01 Jan 0001 <br>
+                                    00:00:00 GMT</td>
+                                <td class="fs-14 py-3 px-3 regular">WINDOS231</td>
+                            </tr>
+                            <tr>
+                                <td class="fs-14 py-3 px-3 regular">asdkadasdq123ds2ca</td>
+                                <td class="fs-14 py-3 px-3 regular py-3">Thu, 30 Nov 2023 <br>
+                                    17:04:20 GMT</td>
+                                <td class="fs-14 py-3 px-3 regular">0.05</td>
+                                <td class="fs-14 py-3 px-3 regular">0</td>
+                                <td class="fs-14 py-3 px-3 regular">100</td>
+                                <td class="fs-14 py-3 px-3 regular">Mon, 01 Jan 0001 <br>
+                                    00:00:00 GMT</td>
+                                <td class="fs-14 py-3 px-3 regular">WINDOS231</td>
+                            </tr>
+                            <tr>
+                                <td class="fs-14 py-3 px-3 regular">asdkadasdq123ds2ca</td>
+                                <td class="fs-14 py-3 px-3 regular py-3">Thu, 30 Nov 2023 <br>
+                                    17:04:20 GMT</td>
+                                <td class="fs-14 py-3 px-3 regular">0.05</td>
+                                <td class="fs-14 py-3 px-3 regular">0</td>
+                                <td class="fs-14 py-3 px-3 regular">100</td>
+                                <td class="fs-14 py-3 px-3 regular">Mon, 01 Jan 0001 <br>
+                                    00:00:00 GMT</td>
+                                <td class="fs-14 py-3 px-3 regular">WINDOS231</td>
+                            </tr>
+                            <tr>
+                                <td class="fs-14 py-3 px-3 regular">asdkadasdq123ds2ca</td>
+                                <td class="fs-14 py-3 px-3 regular py-3">Thu, 30 Nov 2023 <br>
+                                    17:04:20 GMT</td>
+                                <td class="fs-14 py-3 px-3 regular">0.05</td>
+                                <td class="fs-14 py-3 px-3 regular">0</td>
+                                <td class="fs-14 py-3 px-3 regular">100</td>
+                                <td class="fs-14 py-3 px-3 regular">Mon, 01 Jan 0001 <br>
+                                    00:00:00 GMT</td>
+                                <td class="fs-14 py-3 px-3 regular">WINDOS231</td>
+                            </tr>
+                            <tr>
+                                <td class="fs-14 py-3 px-3 regular">asdkadasdq123ds2ca</td>
+                                <td class="fs-14 py-3 px-3 regular py-3">Thu, 30 Nov 2023 <br>
+                                    17:04:20 GMT</td>
+                                <td class="fs-14 py-3 px-3 regular">0.05</td>
+                                <td class="fs-14 py-3 px-3 regular">0</td>
+                                <td class="fs-14 py-3 px-3 regular">100</td>
+                                <td class="fs-14 py-3 px-3 regular">Mon, 01 Jan 0001 <br>
+                                    00:00:00 GMT</td>
+                                <td class="fs-14 py-3 px-3 regular">WINDOS231</td>
+                            </tr>
+                            <tr>
+                                <td class="fs-14 py-3 px-3 regular">asdkadasdq123ds2ca</td>
+                                <td class="fs-14 py-3 px-3 regular py-3">Thu, 30 Nov 2023 <br>
+                                    17:04:20 GMT</td>
+                                <td class="fs-14 py-3 px-3 regular">0.05</td>
+                                <td class="fs-14 py-3 px-3 regular">0</td>
+                                <td class="fs-14 py-3 px-3 regular">100</td>
+                                <td class="fs-14 py-3 px-3 regular">Mon, 01 Jan 0001 <br>
+                                    00:00:00 GMT</td>
+                                <td class="fs-14 py-3 px-3 regular">WINDOS231</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="bg-white p-3">
+            <div class="tt-footer-config w-100">
+                    <p class="fs-14 mb-0 textLight text-lg-end text-sm-center text-center ">© 2023. Circle Systems, Inc. All rights reserved. - Privacy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="./assets/bootstrap/bootstrap5.2.js"></script>
+
+
+</html>
