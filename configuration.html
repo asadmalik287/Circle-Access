@@ -214,12 +214,38 @@
             </div>
 
                 <div class="d-flex tt-config-footer align-items-center justify-content-center py-3">
-                    <button class="btn text-black border fs-16 tt-config-btn regular">Save Changes</button>
+                    <button class="btn text-black border fs-16 tt-config-btn regular"  data-bs-toggle="modal" data-bs-target="#exampleModal">Save Changes</button>
                    </div>
 
         </div>
     </section>
+   <!-- Modal -->
+  <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-4">
+           <div class="text-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
 
+          <div class="text-center">
+            <img src="./assets/images/thinking.png" alt="...">
+            <p class="mb-0 fs-22 semiBold ">Save Changes?</p>
+            <p class="mb-0 fs-14 regular py-3">Are you sure you want to confirm the changes <br> made in the admin management</p>
+            <div>
+            <button class="btn text-black border bg-White border tt-config-button fs-16 w-50 regular">Save Changes</button>
+
+            </div>
+            <div class="mt-3">
+            <button class="btn text-black border fs-16 w-50 tt-config-btn regular">Save Changes</button>
+
+            </div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
     <footer>
         <div class="bg-white p-3">
                <div class="tt-footer-config w-100">
