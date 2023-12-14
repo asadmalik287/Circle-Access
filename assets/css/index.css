@@ -647,3 +647,90 @@ button:disabled {
         padding: 10px;
     }
 }
+
+
+/* Profile Dropdown css */
+
+.pf-dropdownBtn.show {
+    background-color: #f4f4f4;
+    border: 0;
+}
+
+.pf-dropdownBtn:active {
+
+    border: 0 !important;
+}
+
+.drp-menu {
+    width: 427px;
+    position: absolute;
+    left: auto !important;
+    right: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 0px 3.667px 0px rgba(0, 0, 0, 0.12), 0px 1.833px 3.667px 0px rgba(0, 0, 0, 0.14);
+}
+
+.pf-input {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-p-3, #A1DEDC);
+}
+
+.pf-sideBarSerachIcon {
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    border-right: none;
+}
+
+.pf-sideBarSerach {
+    border-radius: 8px;
+    border: 1px solid #D9D9D9 !important;
+    border-left: none;
+}
+
+.pf-sideBarSerachInput {
+    border-radius: 99px !important;
+    border: 1px solid #D9D9D9 !important;
+    border-left: none;
+}
+
+.pf-input-padding {
+    padding: 14px;
+}
+
+.pf-pagger {
+    padding: 14px 0px;
+}
+
+.pf-bg-primary {
+    background: var(--primary-p-4, #C6EBEA);
+
+}
+
+.pf-pagger-div:hover {
+    background-color: #f4f4f4;
+}
+
+.pf-logout:hover {
+    color: red !important;
+}
+
+@media (max-width: 767px) {
+    .drp-menu {
+        width: 300px;
+    }
+
+    .pf-name {
+        flex-wrap: wrap;
+    }
+
+    .pf-name-div {
+        width: 100%;
+    }
+
+    .pf-name-div input {
+        width: 100%;
+    }
+
+}
