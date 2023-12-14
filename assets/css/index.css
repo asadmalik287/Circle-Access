@@ -653,14 +653,16 @@ button:disabled {
 
 .pf-dropdownBtn.show {
     background-color: #f4f4f4;
-    border: 0;
+    border: 0px;
 }
 
 .pf-dropdownBtn:active {
 
-    border: 0 !important;
+    border: 0px !important;
 }
-
+.pf-dropdownBtn{
+    border: 0px !important;
+}
 .drp-menu {
     width: 427px;
     position: absolute;
