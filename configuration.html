@@ -33,7 +33,7 @@
                                 fill="#8D8D8D" />
                         </svg>
                     </span>
-                    <input type="text" class="form-control border-0" placeholder="Search circle services"
+                    <input type="text" class="form-control border-0 pt-0" placeholder="Search circle services"
                         aria-label="Username" aria-describedby="basic-addon1">
                 </div>
 
@@ -41,12 +41,12 @@
                     <img src="./assets/images/man.png" alt="...">
                     <a class="navbar-brand nav-profile fs-14 ps-2">Profile</a>
                 </div>
-                
+
         </nav>
     </header>
 
     <!----------- Side bar start  ------------>
-    
+
     <div class="offcanvas offcanvas-start sideBar" tabindex="-1" id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header side-bar-header">
@@ -250,30 +250,30 @@
                         <h3 class="fs-16 semiBold">Mobile MFA Timeout</h3>
                         <div class="d-flex align-items-center pt-3">
                             <div class="form-check">
-                                <input class="form-check-input cursor-pointer" type="radio" name="exampleRadios" id="never"
-                                    value="option2">
+                                <input class="form-check-input cursor-pointer" type="radio" name="exampleRadios"
+                                    id="never" value="option2">
                                 <label class="form-check-label textLight fs-16 cursor-pointer" for="never">
                                     Never
                                 </label>
                             </div>
 
                             <div class="form-check ms-lg-4 ms-sm-2 ms-2">
-                                <input class="form-check-input cursor-pointer" type="radio" name="exampleRadios" id="secthirty"
-                                    value="option2">
+                                <input class="form-check-input cursor-pointer" type="radio" name="exampleRadios"
+                                    id="secthirty" value="option2">
                                 <label class="form-check-label textLight fs-16 cursor-pointer" for="secthirty">
                                     30 Sec
                                 </label>
                             </div>
                             <div class="form-check ms-lg-4 ms-sm-2 ms-2">
-                                <input class="form-check-input cursor-pointer" type="radio" name="exampleRadios" id="secsixty"
-                                    value="option2">
+                                <input class="form-check-input cursor-pointer" type="radio" name="exampleRadios"
+                                    id="secsixty" value="option2">
                                 <label class="form-check-label textLight fs-16 cursor-pointer" for="secsixty">
                                     60 Sec
                                 </label>
                             </div>
                             <div class="form-check ms-lg-4 ms-sm-2 ms-2">
-                                <input class="form-check-input cursor-pointer" type="radio" name="exampleRadios" id="secninty"
-                                    value="option2">
+                                <input class="form-check-input cursor-pointer" type="radio" name="exampleRadios"
+                                    id="secninty" value="option2">
                                 <label class="form-check-label textLight fs-16 cursor-pointer" for="secninty">
                                     90 Sec
                                 </label>
@@ -285,12 +285,11 @@
                             <h3 class="fs-16 semiBold mb-0">Roaming user support</h3>
                             <div class="form-check form-switch p-0">
                                 <div class="d-flex flex-column-reverse gap-1">
-                                  <input class="form-check-input ms-0 tt-config-switcher" type="checkbox" role="switch" />
-                                  
+                                    <input class="form-check-input ms-0 tt-config-switcher" type="checkbox"
+                                        role="switch" />
+
                                 </div>
-                              </div>
-                        </div>
-                        
+                            </div>
                         </div>
                     <div class="w-100 tt-config-setting mt-4 p-4 bg-white">
                         <h3 class="fs-16 semiBold">SAML based SSO settings</h3>
@@ -313,45 +312,52 @@
                 </div>
             </div>
 
-                <div class="d-flex tt-config-footer align-items-center justify-content-center py-3">
-                    <button class="btn text-black border fs-16 tt-config-btn regular"  data-bs-toggle="modal" data-bs-target="#exampleModal">Save Changes</button>
-                   </div>
+            <div class="d-flex tt-config-footer align-items-center justify-content-center py-3">
+                <button class="btn text-black border fs-16 tt-config-btn regular" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Save Changes</button>
+            </div>
 
         </div>
     </section>
-   <!-- Modal -->
-  <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body p-4">
-           <div class="text-end">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-           </div>
+    <!-- Modal -->
+    <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <div class="text-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-          <div class="text-center">
-            <img src="./assets/images/thinking.png" alt="...">
-            <p class="mb-0 fs-22 semiBold ">Save Changes?</p>
-            <p class="mb-0 fs-14 regular py-3">Are you sure you want to confirm the changes <br> made in the admin management</p>
-            <div>
-            <button class="btn text-black border bg-White border tt-config-button py-3 fs-16 regular">Keep Editing</button>
+                    <div class="text-center">
+                        <img src="./assets/images/thinking.png" alt="...">
+                        <p class="mb-0 fs-22 semiBold ">Save Changes?</p>
+                        <p class="mb-0 fs-14 regular py-3">Are you sure you want to confirm the changes <br> made in the
+                            admin management</p>
+                        <div>
+                            <button data-bs-dismiss="modal" aria-label="Close"
+                                class="btn text-black border bg-White border tt-config-button py-3 fs-16 regular">Keep
+                                Editing</button>
 
-            </div>
-            <div class="mt-3">
-            <button class="btn text-black border fs-16 tt-config-button tt-config-btn regular">Save Changes</button>
+                        </div>
+                        <div class="mt-3">
+                            <button data-bs-dismiss="modal" aria-label="Close"
+                                class="btn text-black border fs-16 tt-config-button tt-config-btn regular">Save
+                                Changes</button>
+
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
-        </div>
-        
-      </div>
     </div>
-  </div>
     <footer>
         <div class="bg-white p-3">
-               <div class="tt-footer-config w-100">
-                    <p class="fs-14 mb-0 text-lg-end text-sm-center text-center textLight">© 2023. Circle Systems, Inc. All rights reserved. - Privacy</p>
-                </div>
-               </div>
+            <div class="tt-footer-config w-100">
+                <p class="fs-14 mb-0 text-lg-end text-sm-center text-center textLight">© 2023. Circle Systems, Inc. All
+                    rights reserved. - Privacy</p>
+            </div>
+        </div>
         </div>
     </footer>
 </body>
