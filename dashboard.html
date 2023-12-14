@@ -11,16 +11,20 @@
     <link rel="shortcut icon" href="./assets/images/navLogo.png" type="image/x-icon">
     <title>Circle Access</title>
     <style>
-        .btn.pf-dropdownBtn:active {
-            border: none !important; 
-            outline: none !important;
-            /* Remove the border on button active state */
+        .pf-dropdownBtn.show {
+            background-color: #f4f4f4;
+            border: 0;
+        }
+        .pf-dropdownBtn:active {
+            
+            border: 0 !important;
         }
 
         .drp-menu {
             width: 427px;
             position: absolute;
-            left: -280px !important;
+            left: auto !important;
+            right: 0;
             border-radius: 8px;
             background: #FFF;
             box-shadow: 0px 0px 3.667px 0px rgba(0, 0, 0, 0.12), 0px 1.833px 3.667px 0px rgba(0, 0, 0, 0.14);
@@ -58,16 +62,33 @@
             
         }
       .pf-pagger-div:hover{
-        background-color: #C6EBEA;
+        background-color: #f4f4f4;
       }
-        
+        .pf-logout:hover{
+            color: red !important;
+        }
+        @media (max-width: 767px){
+            .drp-menu {
+                width: 300px;
+            }
+            .pf-name{
+                flex-wrap: wrap;
+            }
+            .pf-name-div{
+                width: 100%;
+            }
+            .pf-name-div input{
+                width: 100%;
+            }
+
+        }
     </style>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-main py-3">
-            <div class="container-fluid mainContainer bg-white">
+            <div class="container-fluid mainContainer bg-white flex-nowrap">
 
                 <div class="d-flex align-items-center">
                     <div id="main">
@@ -107,13 +128,13 @@
                         <ul class="dropdown-menu drp-menu" aria-labelledby="dropdownMenuButton">
                           
                             <div class="p-3 pb-0">
-                                <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-between pf-name">
                                     <div class="d-flex align-items-center">
                                         <img src="./assets/images/man.png" alt="...">
                                         <p class="medium mb-0 ps-2">Microsoft Tenant</p>
                                     </div>
-                                    <div>
-                                        <input class=" pf-input" type="text" placeholder="Manage Your Profile">
+                                    <div class="pf-name-div">
+                                        <input class=" pf-input mt-3 mt-lg-0" type="text" placeholder="Manage Your Profile">
                                     </div>
                                 </div>
                                 <div class="Pf-search-div-sidbar">
@@ -155,7 +176,7 @@
                             </div>
                             <div class="dropdown-divider"></div>
                             <a class="cursor-poiner text-decoration-none" href="">
-                                <div class="d-flex align-items-center justify-content-center pf-pagger-div ">
+                                <div class="d-flex align-items-center justify-content-center pf-pagger-div pf-bg-primary">
                                     <p class="medium pf-pagger mb-0 text-black  text-center">Microsoft Tenant</p>
                                 </div>
                             </a>
@@ -181,9 +202,9 @@
                                     <p class="medium pf-pagger mb-0  text-center text-secondary">Test Tenant 001</p>
                                 </div>
                                 <a class="cursor-poiner text-decoration-none" href="">
-                                    <div class="d-flex  align-items-center justify-content-center pf-pagger pf-pagger-div">
+                                    <div class="d-flex  align-items-center justify-content-center pf-pagger pf-pagger-div ">
                                         <img class="pb-lg-0  " src="./assets/images/logout.svg" alt="...">
-                                        <p class="text-black fs-14 mb-0 ps-lg-3 ps-md-2 ps-sm-2 ps-2 medium">Logout</p>
+                                        <p class="text-black fs-14 mb-0 ps-lg-3 ps-md-2 ps-sm-2 ps-2 medium pf-logout">Logout</p>
                                     </div>
                                 </a>
                            
