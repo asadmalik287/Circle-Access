@@ -10,79 +10,6 @@
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap5.2.css">
     <link rel="shortcut icon" href="./assets/images/navLogo.png" type="image/x-icon">
     <title>Circle Access</title>
-    <style>
-        .pf-dropdownBtn.show {
-            background-color: #f4f4f4;
-            border: 0;
-        }
-        .pf-dropdownBtn:active {
-            
-            border: 0 !important;
-        }
-
-        .drp-menu {
-            width: 427px;
-            position: absolute;
-            left: auto !important;
-            right: 0;
-            border-radius: 8px;
-            background: #FFF;
-            box-shadow: 0px 0px 3.667px 0px rgba(0, 0, 0, 0.12), 0px 1.833px 3.667px 0px rgba(0, 0, 0, 0.14);
-        }
-
-        .pf-input {
-            padding: 10px 12px;
-            border-radius: 8px;
-            border: 1px solid var(--primary-p-3, #A1DEDC);
-        }
-        .pf-sideBarSerachIcon {
-            border-radius: 8px;
-            border: 1px solid #D9D9D9;
-            border-right: none;
-        }
-        
-        .pf-sideBarSerach {
-            border-radius: 8px;
-            border: 1px solid #D9D9D9 !important;
-            border-left: none;
-        }
-        .pf-sideBarSerachInput{
-            border-radius: 99px !important;
-    border: 1px solid #D9D9D9 !important;
-    border-left: none;
-        }
-        .pf-input-padding{
-            padding: 14px;
-        }
-        .pf-pagger{
-            padding: 14px 0px;
-        }
-        .pf-bg-primary{
-            background: var(--primary-p-4, #C6EBEA);
-            
-        }
-      .pf-pagger-div:hover{
-        background-color: #f4f4f4;
-      }
-        .pf-logout:hover{
-            color: red !important;
-        }
-        @media (max-width: 767px){
-            .drp-menu {
-                width: 300px;
-            }
-            .pf-name{
-                flex-wrap: wrap;
-            }
-            .pf-name-div{
-                width: 100%;
-            }
-            .pf-name-div input{
-                width: 100%;
-            }
-
-        }
-    </style>
 </head>
 
 <body>
@@ -92,8 +19,8 @@
 
                 <div class="d-flex align-items-center">
                     <div id="main">
-                        <span class="span-close-nav"  data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span class="span-close-nav" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample">
                             <img class="togglerMenu" src="./assets/images/humburger-icon.png" alt="">
                         </span>
                     </div>
@@ -116,9 +43,9 @@
                     <img src="./assets/images/man.png" alt="...">
                     <a class="navbar-brand nav-profile fs-14 ps-2">Profile</a>
                 </div> -->
-                 <!-- profile dropbutton -->
+                <!-- profile dropbutton -->
 
-    <div class="profile-dropdown">
+                <div class="profile-dropdown">
                     <div class="dropdown profile-menu position-relative" id="droppdwon">
                         <button class="btn pf-dropdownBtn" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -126,7 +53,7 @@
                             <a class="navbar-brand nav-profile fs-14 ps-2">Profile</a>
                         </button>
                         <ul class="dropdown-menu drp-menu" aria-labelledby="dropdownMenuButton">
-                          
+
                             <div class="p-3 pb-0">
                                 <div class="d-flex justify-content-between pf-name">
                                     <div class="d-flex align-items-center">
@@ -134,13 +61,15 @@
                                         <p class="medium mb-0 ps-2">Microsoft Tenant</p>
                                     </div>
                                     <div class="pf-name-div">
-                                        <input class=" pf-input mt-3 mt-lg-0" type="text" placeholder="Manage Your Profile">
+                                        <input class=" pf-input mt-3 mt-lg-0" type="text"
+                                            placeholder="Manage Your Profile">
                                     </div>
                                 </div>
                                 <div class="Pf-search-div-sidbar">
-                                    
+
                                     <div class="input-group  pf-sideBarSerach d-lg-flex d-sm-none d-none ">
-                                        <span class="input-group-text bg-white border-0 pf-sideBarSerachIcon pf-input-padding"
+                                        <span
+                                            class="input-group-text bg-white border-0 pf-sideBarSerachIcon pf-input-padding"
                                             id="basic-addon1 ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                 viewBox="0 0 18 18" fill="none">
@@ -149,7 +78,8 @@
                                                     fill="#8D8D8D"></path>
                                             </svg>
                                         </span>
-                                        <input type="text" class="form-control border-0 sideBarSerachInput pf-input-padding"
+                                        <input type="text"
+                                            class="form-control border-0 sideBarSerachInput pf-input-padding"
                                             placeholder="Search circle services" aria-label="Username"
                                             aria-describedby="basic-addon1">
                                     </div>
@@ -157,18 +87,25 @@
                                 <div class="pf-pagger">
                                     <div class="pf-pagger-main d-flex align-items-center justify-content-between">
                                         <div>
-                                            <p class="mb-0 medium"><span class="text-secondary">Showing </span>  1-5 of 100</p>
+                                            <p class="mb-0 medium"><span class="text-secondary">Showing </span> 1-5 of
+                                                100</p>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <button class="border-0 bg-white">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                                                    <path d="M18.335 3.86961L16.555 2.09961L6.66504 11.9996L16.565 21.8996L18.335 20.1296L10.205 11.9996L18.335 3.86961Z" fill="#D9D9D9"/>
-                                                  </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                    viewBox="0 0 25 24" fill="none">
+                                                    <path
+                                                        d="M18.335 3.86961L16.555 2.09961L6.66504 11.9996L16.565 21.8996L18.335 20.1296L10.205 11.9996L18.335 3.86961Z"
+                                                        fill="#D9D9D9" />
+                                                </svg>
                                             </button>
                                             <button class="ps-3 border-0 bg-white">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                                                    <path d="M6.61499 20.23L8.38499 22L18.385 12L8.38499 2L6.61499 3.77L14.845 12L6.61499 20.23Z" fill="black"/>
-                                                  </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                    viewBox="0 0 25 24" fill="none">
+                                                    <path
+                                                        d="M6.61499 20.23L8.38499 22L18.385 12L8.38499 2L6.61499 3.77L14.845 12L6.61499 20.23Z"
+                                                        fill="black" />
+                                                </svg>
                                             </button>
                                         </div>
                                     </div>
@@ -176,7 +113,8 @@
                             </div>
                             <div class="dropdown-divider"></div>
                             <a class="cursor-poiner text-decoration-none" href="">
-                                <div class="d-flex align-items-center justify-content-center pf-pagger-div pf-bg-primary">
+                                <div
+                                    class="d-flex align-items-center justify-content-center pf-pagger-div pf-bg-primary">
                                     <p class="medium pf-pagger mb-0 text-black  text-center">Microsoft Tenant</p>
                                 </div>
                             </a>
@@ -185,40 +123,42 @@
                                     <p class="medium pf-pagger mb-0  text-center text-secondary">Google Tenant</p>
                                 </div>
                             </a>
-                               <a class="cursor-poiner text-decoration-none" href="">
-                               <div class="d-flex align-items-center justify-content-center pf-pagger-div">
-                                <p class="medium pf-pagger mb-0  text-center text-secondary">Facebook Tenant</p>
-                            </div>
-                               </a>
-                               <a class="cursor-poiner text-decoration-none" href="">
+                            <a class="cursor-poiner text-decoration-none" href="">
+                                <div class="d-flex align-items-center justify-content-center pf-pagger-div">
+                                    <p class="medium pf-pagger mb-0  text-center text-secondary">Facebook Tenant</p>
+                                </div>
+                            </a>
+                            <a class="cursor-poiner text-decoration-none" href="">
                                 <div class="d-flex align-items-center justify-content-center pf-pagger-div">
                                     <p class="medium pf-pagger mb-0  text-center text-secondary">Test Tenant 001</p>
                                 </div>
 
-                               </a>
-                            
-                               <a class="cursor-poiner text-decoration-none" href="">
+                            </a>
+
+                            <a class="cursor-poiner text-decoration-none" href="">
                                 <div class="d-flex align-items-center justify-content-center pf-pagger-div">
                                     <p class="medium pf-pagger mb-0  text-center text-secondary">Test Tenant 001</p>
                                 </div>
                                 <a class="cursor-poiner text-decoration-none" href="">
-                                    <div class="d-flex  align-items-center justify-content-center pf-pagger pf-pagger-div ">
+                                    <div
+                                        class="d-flex  align-items-center justify-content-center pf-pagger pf-pagger-div ">
                                         <img class="pb-lg-0  " src="./assets/images/logout.svg" alt="...">
-                                        <p class="text-black fs-14 mb-0 ps-lg-3 ps-md-2 ps-sm-2 ps-2 medium pf-logout">Logout</p>
+                                        <p class="text-black fs-14 mb-0 ps-lg-3 ps-md-2 ps-sm-2 ps-2 medium pf-logout">
+                                            Logout</p>
                                     </div>
                                 </a>
-                           
+
                         </ul>
 
                     </div>
                 </div>
 
-                
+
         </nav>
     </header>
 
     <!----------- Side bar start  ------------>
-    
+
     <div class="offcanvas offcanvas-start sideBar" tabindex="-1" id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header side-bar-header">
@@ -230,7 +170,7 @@
                 <a href="./dashboard.html" class="navbar-brand ps-2 logo-content semiBold">Circle Access</a>
             </div>
         </div>
-     <div class="offcanvas-body p-0">
+        <div class="offcanvas-body p-0">
             <div class="search-div-sidbar">
                 <div class="input-group  sideBarSerach d-lg-flex d-sm-none d-none">
                     <span class="input-group-text bg-white border-0 sideBarSerachIcon" id="basic-addon1 ">
@@ -309,9 +249,9 @@
     </div>
 
 
-<!----------- Side bar End  ------------>
+    <!----------- Side bar End  ------------>
 
-   
+
 
 
 
@@ -745,7 +685,7 @@
         };
         new ApexCharts(document.querySelector("#chart2"), e).render();
     });
- 
+
     const droppdwon = document.getElementById('droppdwon');
 
     droppdwon.addEventListener('click', function (event) {
