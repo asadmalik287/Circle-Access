@@ -18,7 +18,13 @@
     src: url('../fonts/OpenSans-Regular.ttf');
 }
 
+.textDark{
+   color: #272830;
 
+}
+.textlightGreen{
+    color: #41B8B6;
+}
 
 .bold {
     font-family: Open-sans-bold !important;
@@ -85,7 +91,9 @@
 .fs-11 {
     font-size: 11px;
 }
-
+.textred{
+    color: #EC9292;
+}
 /* -------------Dashboard------------- */
 /* -------------Dashboard------------- */
 
@@ -118,6 +126,7 @@
 input:focus {
     box-shadow: none !important;
     outline: 0;
+    border-color: #ced4da !important;
 }
 
 .tt-cta-box {
@@ -142,9 +151,6 @@ input:focus {
     font-size: 57px;
 }
 
-.tt-dev-resources p {
-    color: var(--primary-text--color);
-}
 
 .tt-resources-inner {
     padding: 14px 24px;
@@ -295,6 +301,7 @@ body {
 }
 
 .tt-config-setting {
+    padding: 32px;
     border-radius: 4px;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 1.5px 3px 0px rgba(0, 0, 0, 0.14);
 }
@@ -309,14 +316,23 @@ body {
 }
 
 .tt-config-btn {
-    font-size: 14px !important;
-    background-color: #A1DEDC !important;
+    font-size: 16px !important;
+    background-color: #41B8B6 !important;
 }
 
 input::placeholder {
     font-size: 12px;
+    font-family: Open-sans-regular;
+    color: #8D8D8D;
 }
+input{
+    font-size: 12px !important;
+    font-family: Open-sans-regular !important;
 
+}
+.tt-radius-border{
+    border-radius: 8px !important;
+}
 .form-check-input:checked {
     background-color: #37CBC6 !important;
     border-color: #37CBC6 !important;
@@ -342,7 +358,7 @@ input::placeholder {
 }
 
 .bg-lightGreen {
-    background-color: #C6EBEA !important;
+    background-color: #41B8B6 !important;
     border-radius: 0 !important;
     border-top-right-radius: 4px !important;
     border-bottom-right-radius: 4px !important;
@@ -392,7 +408,7 @@ td {
 
 button:disabled {
     background-color: #F6F8FB !important;
-    color: #666262 !important;
+    color: #D9D9D9 !important;
     border-radius: 8px;
     border: 0 !important;
 }
@@ -404,7 +420,9 @@ button:disabled {
 .cursor-pointer {
     cursor: pointer;
 }
-
+.tt-config-setting1{
+    padding: 32px;
+}
 .tt-admin-canvas {
     background-color: #F6F8FB !important;
     width: 520px !important;
@@ -412,7 +430,9 @@ button:disabled {
     /* border-top-left-radius: 14px; */
     /* border-bottom-left-radius: 14px; */
 }
-
+.tt-config-danger:active{
+    border: 0;
+}
 .tt-admin-canvasInner {
     padding: 32px;
     height: 100%;
@@ -422,8 +442,18 @@ button:disabled {
 .tt-canvas-top {
     height: 85%;
 }
-
+.admin-canvas-btn{
+    background-color: #fff !important;
+    padding: 10px !important;
+    border-radius: 50% !important;
+    width: 10px !important;
+    height: 10px !important;
+}
 .tt-canvas-main {
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 1.5px 3px 0px rgba(0, 0, 0, 0.14);
+}
+.tt-dashboard-right{
     border-radius: 4px;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12), 0px 1.5px 3px 0px rgba(0, 0, 0, 0.14);
 }
@@ -540,13 +570,14 @@ button:disabled {
   .tt-user-minus{
     width: 24px;
     height: 24px;
-    background-color: #e5e3e3;
+    background-color: #EEEEEE;
     border-radius: 4px;
   }
   .tt-user-plus{
     width: 24px;
     height: 24px;
-    background-color: #C6EBEA;
+    background-color:#55C3C0;
+    ;
     border-radius: 4px;
 
   }
@@ -676,7 +707,7 @@ button:disabled {
 .pf-input {
     padding: 10px 12px;
     border-radius: 8px;
-    border: 1px solid var(--primary-p-3, #A1DEDC);
+    border: 1px solid var(--primary-p-3, #41B8B6);
 }
 
 .pf-sideBarSerachIcon {
