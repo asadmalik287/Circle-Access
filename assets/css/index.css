@@ -163,130 +163,6 @@ input:focus {
     padding: 24px;
 }
 
-@media screen and (min-width:1400px) and (max-width: 1550px) {
-    .tt-dev-resources h2 {
-        font-size: 42px;
-    }
-}
-
-@media screen and (min-width:1025px) and (max-width: 1400px) {
-    .tt-cta-box {
-        padding: 40px 10px;
-    }
-
-    .mainContainer {
-        padding-left: 40px !important;
-        padding-right: 40px !important;
-    }
-
-    .tt-cta-box p {
-        font-size: 12px;
-    }
-
-    .tt-dev-resources h2 {
-        font-size: 36px;
-    }
-
-    .tt-dev-resources {
-        padding: 20px;
-    }
-
-    .tt-resources-inner {
-        padding: 14px 10px;
-    }
-  
-}
-@media screen and (min-width:480px) and (max-width: 768px){
-    #offcanvasRight {
-        width: 400px !important;
-    }
-}
-@media screen and (min-width:768px) and (max-width: 1025px) {
-    .mainContainer {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-    }
-
-    .tt-resources-inner {
-        padding: 14px 10px;
-    }
-
-    .tt-cta-box {
-        width: 50%;
-        gap: 10px;
-    }
-
-    .tt-dev-resources {
-        padding: 20px;
-    }
-
-    .tt-dev-resources h2 {
-        font-size: 38px;
-    }
-
-    .tt-cta-box p {
-        font-size: 12px;
-    }
-
-    .tt-cta-box {
-        padding: 20px 10px;
-    }
-
-    .tt-footer-config {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .tt-config-footer {
-        justify-content: center !important;
-        align-items: center;
-    }
-    #offcanvasRight {
-        width: 400px !important;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .tt-cta-box {
-        width: 100%;
-        padding: 20px 20px;
-        justify-content: center;
-    }
-
-    .tt-cta-box p {
-        text-align: center;
-    }
-
-    .mainContainer {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-    }
-
-    .tt-dev-resources h2 {
-        font-size: 32px;
-    }
-
-    .tt-main-resource {
-        flex-direction: column;
-    }
-
-    .tt-left-chart {
-        padding: 12px;
-    }
-
-    .logo-content {
-        font-size: 20px !important;
-    }
-
-    #apexcharts09022qao {
-        height: 300px !important;
-    }
-
-    #chart2 {
-        min-height: 300px !important;
-    }
-    
-}
 
 /* -------------Dashboard------------- */
 /* -------------Dashboard------------- */
@@ -460,76 +336,7 @@ button:disabled {
 .tt-table-responsive{
     white-space: nowrap;
 }
-@media screen and (min-width:992px) {
-    .tt-admin-table th {
-        width: 25%;
-    }
 
-    .tt-table-responsive {
-        overflow-x: visible !important;
-    }
-}
-
-@media screen and (max-width:1200px) {
-    .tt-config-setting .form-check {
-        margin-left: 12px !important;
-    }
-
-    .tt-config-setting1 .form-check {
-        margin-left: 12px !important;
-    }
-
-    .tt-config-setting .form-check .form-check-label {
-        font-size: 13px !important;
-    }
-
-    .tt-config-setting1 .form-check .form-check-label {
-        font-size: 13px !important;
-    }
-
-    .mainContainer1 {
-        padding-left: 50px !important;
-        padding-right: 50px !important;
-    }
-    .tt-admin-canvasInner {
-        padding: 22px;
-}
-}
-@media screen and (max-width:768px) {
-    .tt-config-footer1 {
-        justify-content: center;
-    }
-
-    .tt-config-foote1r {
-        justify-content: center;
-    }
-
-    .tt-admin-tableInner {
-        width: 100% !important;
-    }
-
-    .tt-admin-table th,
-    .tt-admin-table td {
-        white-space: nowrap;
-    }
-}
-@media screen and (max-width:480px) {
-    #offcanvasRight {
-        width: 100% !important;
-    }
-}
-@media screen and (max-width:395px){
-.tt-canvas-inner{
-    flex-wrap: wrap;
-}
-.tt-canvas-inner button{
-    width: 100% !important;
-    margin-top: 10px;
-}
-.tt-canvas-top {
-    height: 75%;
-}
-}
 
 
 .gray-color {
@@ -555,11 +362,7 @@ button:disabled {
     opacity: 1;
     background-color: rgba(235, 235, 235, 0.7);
   }
-  @media screen and (max-width:768px) {
-    .admini-main {
-        padding: 20px 20px;
-    }
-  }
+ 
   /* ---------------User Statistics--------------- */
   /* ---------------User Statistics--------------- */
   .tt-users{
@@ -669,16 +472,6 @@ button:disabled {
 }
 
 
-@media (max-width:767px) {
-    .search-div-sidbar {
-        padding: 0;
-    }
-
-    .togglerMenu {
-        padding: 10px;
-    }
-}
-
 
 /* Profile Dropdown css */
 
@@ -751,21 +544,24 @@ button:disabled {
 .pf-logout-bg:hover .pf-logout{
     color: red !important;
 }
-@media (max-width: 767px) {
-    .drp-menu {
-        width: 300px;
-    }
+.padd-32 {
+    padding: 32px;
+}
 
-    .pf-name {
-        flex-wrap: wrap;
-    }
+.input-height {
+    height: 44px;
+}
 
-    .pf-name-div {
-        width: 100%;
-    }
+.lightprimary {
+    border: 1px solid #41B8B6 !important;
+}
 
-    .pf-name-div input {
-        width: 100%;
-    }
+.copyimg-height {
+    padding: 10px;
+    background-color: #F6F8FB;
+}
 
+.bg-lightgrey {
+    height: 364px;
+    background-color: #F6F8FB;
 }
