@@ -78,7 +78,7 @@
 <body>
     <header>
         <nav class="navbar navbar-main py-3">
-            <div class="container-fluid mainContainer bg-white">
+            <div class="container-fluid mainContainer bg-white flex-nowrap">
 
                 <div class="d-flex align-items-center">
                     <div id="main">
@@ -112,7 +112,7 @@
                         <ul class="dropdown-menu drp-menu" aria-labelledby="dropdownMenuButton">
 
                             <div class="p-3 pb-0">
-                                <div class="d-flex justify-content-between pf-name">
+                                <div class="d-flex justify-content-between pf-name m-auto">
                                     <div class="d-flex align-items-center">
                                         <img src="./assets/images/man.png" alt="...">
                                         <p class="medium mb-0 ps-2 text-black">Microsoft Tenant</p>
@@ -196,14 +196,16 @@
                                 <div class="d-flex align-items-center justify-content-center pf-pagger-div">
                                     <p class="medium pf-pagger mb-0  text-center text-secondary">Test Tenant 001</p>
                                 </div>
-                                <a class="cursor-poiner text-decoration-none" href="">
-                                    <div
-                                        class="d-flex  align-items-center justify-content-center pf-pagger pf-pagger-div ">
-                                        <img class="pb-lg-0  " src="./assets/images/logout.svg" alt="...">
-                                        <p class="text-black fs-14 mb-0 ps-lg-3 ps-md-2 ps-sm-2 ps-2 medium pf-logout">
-                                            Logout</p>
-                                    </div>
-                                </a>
+                            </a> 
+                            <div class="dropdown-divider"></div>
+                            <a class="cursor-poiner text-decoration-none" href="">
+                                <div
+                                    class="d-flex  align-items-center justify-content-center pf-pagger pf-pagger-div pf-logout-bg">
+                                    <img class="pb-lg-0  " src="./assets/images/logout.svg" alt="...">
+                                    <p class="text-black fs-14 mb-0 ps-lg-3 ps-md-2 ps-sm-2 ps-2 medium pf-logout">
+                                        Logout</p>
+                                </div>
+                            </a>
 
                         </ul>
 
