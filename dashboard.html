@@ -11,7 +11,11 @@
     <link rel="shortcut icon" href="./assets/images/navLogo.png" type="image/x-icon">
     <title>Circle Access</title>
     <style>
-
+        .btn.pf-dropdownBtn:active {
+            border: none !important; 
+            outline: none !important;
+            /* Remove the border on button active state */
+        }
 
         .drp-menu {
             width: 427px;
@@ -53,6 +57,10 @@
             background: var(--primary-p-4, #C6EBEA);
             
         }
+      .pf-pagger-div:hover{
+        background-color: #C6EBEA;
+      }
+        
     </style>
 </head>
 
@@ -90,8 +98,8 @@
                  <!-- profile dropbutton -->
 
     <div class="profile-dropdown">
-                    <div class="dropdown profile-menu position-relative">
-                        <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton"
+                    <div class="dropdown profile-menu position-relative" id="droppdwon">
+                        <button class="btn pf-dropdownBtn" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="./assets/images/man.png" alt="...">
                             <a class="navbar-brand nav-profile fs-14 ps-2">Profile</a>
@@ -131,40 +139,54 @@
                                             <p class="mb-0 medium"><span class="text-secondary">Showing </span>  1-5 of 100</p>
                                         </div>
                                         <div class="d-flex align-items-center">
-                                            <div>
+                                            <button class="border-0 bg-white">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                                                     <path d="M18.335 3.86961L16.555 2.09961L6.66504 11.9996L16.565 21.8996L18.335 20.1296L10.205 11.9996L18.335 3.86961Z" fill="#D9D9D9"/>
                                                   </svg>
-                                            </div>
-                                            <div class="ps-3    ">
+                                            </button>
+                                            <button class="ps-3 border-0 bg-white">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                                                     <path d="M6.61499 20.23L8.38499 22L18.385 12L8.38499 2L6.61499 3.77L14.845 12L6.61499 20.23Z" fill="black"/>
                                                   </svg>
-                                            </div>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="dropdown-divider"></div>
-                            <div class="d-flex align-items-center justify-content-center pf-bg-primary">
-                                <p class="medium pf-pagger mb-0  text-center">Microsoft Tenant</p>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center ">
-                                <p class="medium pf-pagger mb-0  text-center text-secondary">Google Tenant</p>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center ">
+                            <a class="cursor-poiner text-decoration-none" href="">
+                                <div class="d-flex align-items-center justify-content-center pf-pagger-div ">
+                                    <p class="medium pf-pagger mb-0 text-black  text-center">Microsoft Tenant</p>
+                                </div>
+                            </a>
+                            <a class="cursor-poiner text-decoration-none" href="">
+                                <div class="d-flex align-items-center justify-content-center pf-pagger-div">
+                                    <p class="medium pf-pagger mb-0  text-center text-secondary">Google Tenant</p>
+                                </div>
+                            </a>
+                               <a class="cursor-poiner text-decoration-none" href="">
+                               <div class="d-flex align-items-center justify-content-center pf-pagger-div">
                                 <p class="medium pf-pagger mb-0  text-center text-secondary">Facebook Tenant</p>
                             </div>
-                            <div class="d-flex align-items-center justify-content-center ">
-                                <p class="medium pf-pagger mb-0  text-center text-secondary">Test Tenant 001</p>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center ">
-                                <p class="medium pf-pagger mb-0  text-center text-secondary">Test Tenant 001</p>
-                            </div>
-                            <div class="d-flex  align-items-center justify-content-center pf-pagger">
-                                <img class="pb-lg-0  " src="./assets/images/logout.svg" alt="...">
-                                <p class="text-black fs-14 mb-0 ps-lg-3 ps-md-2 ps-sm-2 ps-2 medium">Logout</p>
-                            </div>
+                               </a>
+                               <a class="cursor-poiner text-decoration-none" href="">
+                                <div class="d-flex align-items-center justify-content-center pf-pagger-div">
+                                    <p class="medium pf-pagger mb-0  text-center text-secondary">Test Tenant 001</p>
+                                </div>
+
+                               </a>
+                            
+                               <a class="cursor-poiner text-decoration-none" href="">
+                                <div class="d-flex align-items-center justify-content-center pf-pagger-div">
+                                    <p class="medium pf-pagger mb-0  text-center text-secondary">Test Tenant 001</p>
+                                </div>
+                                <a class="cursor-poiner text-decoration-none" href="">
+                                    <div class="d-flex  align-items-center justify-content-center pf-pagger pf-pagger-div">
+                                        <img class="pb-lg-0  " src="./assets/images/logout.svg" alt="...">
+                                        <p class="text-black fs-14 mb-0 ps-lg-3 ps-md-2 ps-sm-2 ps-2 medium">Logout</p>
+                                    </div>
+                                </a>
+                           
                         </ul>
 
                     </div>
@@ -702,17 +724,18 @@
         };
         new ApexCharts(document.querySelector("#chart2"), e).render();
     });
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "350px";
-        document.getElementById("main").style.marginLeft = "350px";
-        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    }
+ 
+    const droppdwon = document.getElementById('droppdwon');
 
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-        document.body.style.backgroundColor = "white";
-    }
+    droppdwon.addEventListener('click', function (event) {
+        // Prevent the default behavior (e.g., following a link or submitting a form)
+        event.preventDefault();
+
+        // Stop the propagation of the click event
+        event.stopPropagation();
+
+        // Your custom logic here (if needed)
+    });
 </script>
 
 </html>
