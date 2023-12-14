@@ -714,10 +714,12 @@ button:disabled {
     background-color: #f4f4f4;
 }
 
-.pf-logout:hover {
+.pf-logout-bg:hover{
+    background-color: #fcf1f1;
+}
+.pf-logout-bg:hover .pf-logout{
     color: red !important;
 }
-
 @media (max-width: 767px) {
     .drp-menu {
         width: 300px;
